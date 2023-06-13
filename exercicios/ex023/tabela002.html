@@ -24,6 +24,14 @@
             color: white;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            }
+
         td.num {
             text-align: right;
         }
@@ -33,6 +41,7 @@
    <h1>Uso de tabelas grandes</h1> 
    <!--
     anatomia para tabelas grandes
+    caption
     table
         thead
             tr, td, th
@@ -42,10 +51,11 @@
             tr, td, th
    -->
     <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -182,7 +192,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>216 877 028</strong></td>
             </tr>
 
